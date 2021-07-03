@@ -93,5 +93,5 @@ if ($status == false) {
 	exit('sqlError:' . $error[2]);
 } else {
 	// 成功の場合
-	header('Location:shinsei_input.php');
+	header('Location:shinsei_send.html');
 }

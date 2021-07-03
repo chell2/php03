@@ -116,7 +116,7 @@ if ($status == false) {
 					<dt>住所:</dt>
 					<dd>
 						<!-- ▼住所入力フィールド(都道府県+以降の住所) -->
-						<textarea name="addr" id="addr" rows="2"><?= $record['addr'] ?></textarea>
+						<textarea name="addr" id="addr" rows="2"><?php print($record['addr']); ?></textarea>
 					</dd>
 					<dt>TEL:</dt>
 					<dd><input type="tel" name="tel" value="<?= $record['tel'] ?>"></dd>
@@ -159,7 +159,7 @@ if ($status == false) {
 					<dt>被害額:</dt>
 					<dd><input type="number" min="0" step="1" name="amounts" value="<?= $record['amounts'] ?>">円</dd>
 					<dt>状況詳細:</dt>
-					<dd><textarea name="memo" rows="4" value="<?= $record['memo'] ?>"></textarea></dd>
+					<dd><textarea name="memo" rows="4"><?php print($record['memo']); ?></textarea></dd>
 				</dl>
 				<button type="button" onclick="submit()"> 更新 </button>
 				<input type="hidden" name="id" value="<?= $record['id'] ?>">
